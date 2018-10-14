@@ -69,29 +69,29 @@
                             <p>
                               <script>
                               //Constructores
-                              function persona (nombre, dni){
+                              function persona (nombre, ci){
                               this.nombre = nombre;
-                              this.dni = dni;
+                              this.dni = ci;
                               }
-                              function alumno (nombre, dni, asignaturas){
+                              function alumno (nombre, ci, asignaturas){
                               this.heredar = persona;
-                              this.heredar(nombre, dni);
+                              this.heredar(nombre, ci);
                               this.asignaturas = asignaturas;
                               }
 
-                              function docente (nombre, dni, sueldo){
+                              function docente (nombre, ci, sueldo){
                               this.heredar = persona;
-                              this.heredar(nombre, dni);
+                              this.heredar(nombre, ci);
                               this.sueldo = sueldo;
                               }
 
                               //ALUMNO
-                              var alum = new alumno('reyna', 343234569, new Array('progra','base de datos'));
+                              var alum = new alumno('reyna', 789456123, new Array('progra','base de datos'));
                               document.write(alum.nombre + '<br/>');
                               document.write(alum.dni + '<br/>');
                               document.write(alum.asignaturas + '<br/>');
                               //profesor
-                              var doc = new docente('ditmar', 343234569, 10500);
+                              var doc = new docente('ditmar', 123456789, 10500);
                               document.write(doc.nombre + '<br/>');
                               document.write(doc.dni + '<br/>');
                               document.write(doc.sueldo + '<br/>');
