@@ -67,7 +67,30 @@
                         <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">PROGRAMACION ORIENTADA A OBJETOS</h3>
                         <div class="mdl-cell mdl-cell--6-col mdl-typography--headline">
                             <p>
-                              AQUI SE CODIFICA EN JAVASCRIPT
+                              <script>
+                              var persona = function(nombre, edad, altura, peso) {
+                                  this.nombre = nombre;
+                                  this.edad = edad;
+                                  this.altura = altura;
+                                  this.peso = peso;
+                                  this.mostrarDatos = function() {
+                                    var cadena = 'Nombre: '+this.nombre+ '<br>'+'  Edad: '+this.edad+ '<br>'+' Altura: '+this.altura+ '<br>'+' m  Peso: '+this.peso+'kg.';
+                                    return cadena;
+                                  }
+                                  this.mayorEdad = function() {
+                                      if (this.edad >= 18) {
+                                          var cad = this.nombre+' es mayor de edad.';
+                                      } else {
+                                          var cad =this.nombre+' es menor de edad.';
+                                      }
+                                      return cad;
+                                  }
+                              }
+                              var shane = new persona('Shnae weest', 25, 1.7, 72);
+                              //document.write('FIRST NAME:'+cliente1.nombre+'<br>');
+                              document.write('datos de la persona: '+ shane.mostrarDatos()+ '<br>');
+                              document.write('que es : '+ shane.mayorEdad()+ '<br>');
+                              </script>
                             </p>
                         </div>
                     </div>
