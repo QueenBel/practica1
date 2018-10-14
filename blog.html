@@ -67,7 +67,36 @@
                         <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">PROGRAMACION ORIENTADA A OBJETOS</h3>
                         <div class="mdl-cell mdl-cell--6-col mdl-typography--headline">
                             <p>
-                              AQUI SE CODIFICA EN JAVASCRIPT
+                              <script>
+                              //Constructores
+                              function persona (nombre, dni){
+                              this.nombre = nombre;
+                              this.dni = dni;
+                              }
+                              function alumno (nombre, dni, asignaturas){
+                              this.heredar = persona;
+                              this.heredar(nombre, dni);
+                              this.asignaturas = asignaturas;
+                              }
+
+                              function profesor (nombre, dni, sueldo){
+                              this.heredar = persona;
+                              this.heredar(nombre, dni);
+                              this.sueldo = sueldo;
+                              }
+
+                              //Otras funciones
+                              function toString (){
+                              return this.nombre + ' ' + this.dni;
+                              }
+
+                              //Inicio del programa
+                              var alum = new alumno('reyna', 343234569, new Array('mate','quim'));
+                              document.write(alum.nombre + '<br/>');
+                              document.write(alum.dni + '<br/>');
+                              document.write(alum.asignaturas + '<br/>');
+                              
+                              </script>
                             </p>
                         </div>
                     </div>
