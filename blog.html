@@ -79,23 +79,22 @@
                               this.asignaturas = asignaturas;
                               }
 
-                              function profesor (nombre, dni, sueldo){
+                              function docente (nombre, dni, sueldo){
                               this.heredar = persona;
                               this.heredar(nombre, dni);
                               this.sueldo = sueldo;
                               }
 
-                              //Otras funciones
-                              function toString (){
-                              return this.nombre + ' ' + this.dni;
-                              }
-
-                              //Inicio del programa
-                              var alum = new alumno('reyna', 343234569, new Array('mate','quim'));
+                              //ALUMNO
+                              var alum = new alumno('reyna', 343234569, new Array('progra','base de datos'));
                               document.write(alum.nombre + '<br/>');
                               document.write(alum.dni + '<br/>');
                               document.write(alum.asignaturas + '<br/>');
-                              
+                              //profesor
+                              var doc = new docente('ditmar', 343234569, 10500);
+                              document.write(doc.nombre + '<br/>');
+                              document.write(doc.dni + '<br/>');
+                              document.write(doc.sueldo + '<br/>');
                               </script>
                             </p>
                         </div>
