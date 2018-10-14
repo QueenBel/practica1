@@ -68,7 +68,6 @@
                         <div class="mdl-cell mdl-cell--6-col mdl-typography--headline">
                             <p>
 
-                          	<div id="capaDeResultados"></div>
                               <script language="javascript">
                             		class Personal {
                             			constructor (nombre, apellidos){
@@ -86,10 +85,9 @@
                             		var empleado_1 = new Personal ("Isabel", "ayarachi");
                             		empleado_1.establecerSalario(1000);
                                 //document.write('FIRST NAME:'+cliente1.nombre+'<br>');
-
-                            	 //document.write(Personal) += "Nombre: " + empleado_1.nombre + "<br>";
-                            		document.getElementById("capaDeResultados").innerHTML += "Apellidos: " + empleado_1.apellidos + "<br>";
-                            		document.getElementById("capaDeResultados").innerHTML += "Salario bruto: " + empleado_1.salarioBruto + "<br>";
+                                document.write('NOMBRE: '+ empleado_1.nombre + '<br>');
+                                document.write('APELLIDO: '+ empleado_1.apellidos + '<br>');
+                                document.write('SALARIO BRUTO: '+ empleado_1.salarioBruto+ '<br>');
                             	</script>
                             </p>
                         </div>
