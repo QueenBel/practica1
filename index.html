@@ -66,9 +66,27 @@
                     <div class="mdl-grid portfolio-copy">
                         <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">POO-FUNCIONES</h3>
                         <div class="mdl-cell mdl-cell--6-col mdl-typography--headline">
-                            <p>
-                              AQUI SE CODIFICA EN JAVASCRIPT
+                            <p style="background-color" color="blue">
+                              Una función en JavaScript se define con la palabra clave
+                              function seguido del nombre de la función y los paréntesis.
+                              Puede tener o no parámetros. Luego, entre llaves, un conjunto
+                               de instrucciones y opcionalmente la palabra clave return y
+                               el valor de retorno.
                             </p>
+
+                              <script>
+                                function Cliente(nombre,apellido)
+                                {
+                                  this.nombre=nombre;
+                                  this.apellido=apellido;
+                                }
+
+                                var cliente1;
+                                cliente1=new Cliente('isabel', 'ayarachi');
+                                document.write('FIRST NAME:'+cliente1.nombre+'<br>');
+                                document.write('LAST NAME:'+cliente1.apellido+'<br>');
+                              </script>
+
                         </div>
                     </div>
                 </div>
