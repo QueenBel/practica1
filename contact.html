@@ -67,7 +67,30 @@
                         <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">POO-HERENCIAS</h3>
                         <div class="mdl-cell mdl-cell--6-col mdl-typography--headline">
                             <p>
-                              AQUI SE CODIFICA EN JAVASCRIPT
+
+                          	<div id="capaDeResultados"></div>
+                              <script language="javascript">
+                            		class Personal {
+                            			constructor (nombre, apellidos){
+                            				this.nombre = nombre;
+                            				this.apellidos = apellidos;
+                            			}
+                            			establecerSalario (salario){
+                            				this.salarioBruto = salario;
+                            				var retencion = 18.7;
+                            				var descuento = (salario * retencion) / 100;
+                            				this.salarioNeto = salario - descuento;
+                            			}
+                            		}
+
+                            		var empleado_1 = new Personal ("Isabel", "ayarachi");
+                            		empleado_1.establecerSalario(1000);
+
+                            	 // document.write(Personal) += "Nombre: " + empleado_1.nombre + "<br>";
+                            		document.getElementById("capaDeResultados").innerHTML += "Apellidos: " + empleado_1.apellidos + "<br>";
+                            		document.getElementById("capaDeResultados").innerHTML += "Salario bruto: " + empleado_1.salarioBruto + "<br>";
+                            		document.getElementById("capaDeResultados").innerHTML += "Salario neto: " + empleado_1.salarioNeto + "<br>";
+                            	</script>
                             </p>
                         </div>
                     </div>
